@@ -63,7 +63,7 @@ warnings.filterwarnings("ignore")
 IMG_SIZE: int = 28               # character image size (pixels) fed to the CNN
 NUM_CLASSES: int = 36            # 0–9 (10) + A–Z (26)
 BATCH_SIZE: int = 64
-EPOCHS: int = 100                 # more epochs; early stopping will cut training short
+EPOCHS: int = 200                 # more epochs; early stopping will cut training short
 LEARNING_RATE: float = 1e-3
 DROPOUT_RATE: float = 0.5        # increased from 0.4 → stronger regularisation
 WEIGHT_DECAY: float = 5e-4       # increased from 1e-4 → penalise large weights more
@@ -1425,7 +1425,7 @@ def predict_plates_demo(
         else:
             predicted = predict_plate(bgr, segmenter, model, device)
 
-        match = "✓" if predicted == actual else "✗"
+        match = "Y" if predicted == actual else "X"
         if predicted == actual:
             correct += 1
         print(f"  {i:>3}  {actual:<12}  {predicted:<12}  {match}")
