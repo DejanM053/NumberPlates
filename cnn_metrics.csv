@@ -1,0 +1,2 @@
+model_type,model_trainable_params,char_accuracy,char_precision_weighted,char_recall_weighted,char_f1_weighted,char_f1_B,char_f1_8,char_f1_O,char_f1_0,char_f1_S,char_f1_5,char_f1_I,char_f1_1,char_f1_Q,char_f1_Z,char_f1_2,plate_exact_match_acc,plate_mean_cer,plate_mean_inference_ms,plate_n_evaluated,seg_total_plates,seg_successful_plates,seg_success_rate
+CNN,573316,0.6284,0.6649,0.6284,0.6308,0.5769,0.7037,0.0755,0.0,0.5833,0.7308,0.0,0.7536,0.0,0.625,0.8163,0.098,0.4681,43.23,735,735,405,0.551
